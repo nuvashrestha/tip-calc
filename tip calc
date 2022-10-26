@@ -1,0 +1,8 @@
+subtotal = float(input('Enter the subtotal:$ '))
+tip = float(input('Enter the tip(as a %): '))
+tip1 = tip/100
+
+print('Subtotal: $', format(subtotal, ',.2f'), sep='')
+print('Tip: $', format(tip1*subtotal, ',.2f'), sep='')
+
+print('Total: $', format(tip1*subtotal+subtotal, ',.2f'), sep='')
